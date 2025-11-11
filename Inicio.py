@@ -38,7 +38,7 @@ eafit_location = pd.DataFrame({
 })
 
 # Display map
-st.subheader("📍 Ubicación de los Sensores de Luz - Universidad EAFIT")
+st.subheader("📍 Ubicación de los Sensores de Luz - Centro de Montería")
 st.map(eafit_location, zoom=15)
 
 # File uploader
