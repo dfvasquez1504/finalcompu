@@ -6,8 +6,8 @@ from datetime import datetime
 
 # Page configuration
 st.set_page_config(
-    page_title="Análisis de Sensores - Mi Ciudad",
-    page_icon="📊",
+    page_title="Análisis de Luminosidad Universidad EAFIT",
+    page_icon="🔦",
     layout="wide"
 )
 
@@ -24,10 +24,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and description
-st.title('📊 Análisis de datos de Sensores en Mi Ciudad')
+st.title('📊 Análisis de datos de Luminosidad en Mi Universidad')
 st.markdown("""
     Esta aplicación permite analizar datos de sensores
-    recolectados en diferentes puntos de la ciudad.
+    recolectados de luz en mi Universidad.
 """)
 
 # Create map data for EAFIT
@@ -38,7 +38,7 @@ eafit_location = pd.DataFrame({
 })
 
 # Display map
-st.subheader("📍 Ubicación de los Sensores - Universidad EAFIT")
+st.subheader("📍 Ubicación de los Sensores de Luz - Universidad EAFIT")
 st.map(eafit_location, zoom=15)
 
 # File uploader
